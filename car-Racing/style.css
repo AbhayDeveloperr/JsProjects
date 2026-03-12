@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body{
+    overflow: hidden;
+    animation: bodyShake 6s linear infinite;
+}
+
 .sky{
     height: 100vh;
     width: 100%;
@@ -40,6 +45,7 @@
     position: absolute;
     left: 444px;
     bottom: 29vh;
+    animation: carShake .52s linear infinite;
 }
 
 .wheel1 img{
@@ -47,7 +53,7 @@
     position: relative;
     left: 50px;
     top: 42px;
-    animation: WheelRotation 0.5s linear infinite;
+    animation: WheelRotation 0.15s linear infinite;
 }
 
 .wheel2 img{
@@ -55,7 +61,7 @@
     position: relative;
     left: 240px;
     top: -23px;
-    animation: WheelRotation 0.5s linear infinite;
+    animation: WheelRotation 0.15s linear infinite;
 }
 
 @keyframes WheelRotation{
@@ -68,5 +74,35 @@
 {
     100%{
         transform: translateX(-500vw);
+    }
+}
+
+@keyframes carShake
+{
+    0%{
+        transform: translateY(-5px);
+    }
+   
+    50%{
+        transform: translateY(5px);
+    }
+  
+    100%{
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes bodyShake
+{
+    0%{
+        transform: translateY(-40px);
+    }
+   
+    50%{
+        transform: translateY(40px);
+    }
+  
+    100%{
+        transform: translateY(-40px);
     }
 }
