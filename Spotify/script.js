@@ -24,6 +24,9 @@ masterPlay.addEventListener('click', () => {
         masterPlay.style.display = 'none';
         masterPause.style.display = 'inline';
         gif.style.opacity = 1;
+        songIndex = parseInt(songIndex);
+        songItemPlay[songIndex].style.display = 'none';
+        songItemPause[songIndex].style.display = 'inline';
     }
 });
 masterPause.addEventListener('click', () => {
@@ -32,6 +35,9 @@ masterPause.addEventListener('click', () => {
         masterPlay.style.display = 'inline';
         masterPause.style.display = 'none';
         gif.style.opacity = 0;
+        songIndex = parseInt(songIndex);
+        songItemPlay[songIndex].style.display = 'inline';
+        songItemPause[songIndex].style.display = 'none';
     }
 });
 
