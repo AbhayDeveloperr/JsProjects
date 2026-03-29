@@ -14,6 +14,8 @@ function main(cTime){
 cosole.log("maintaining streak");
 cosole.log("maintaining streak again");
 
+cosole.log("maintaining streak again 2");
+
 
 
 
