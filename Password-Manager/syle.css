@@ -22,8 +22,10 @@ ul li{
     margin: 0 13px;
 }
 
-table{
+table,td,tr{
     border: 2px solid black;
+    border-collapse: collapse;
+    padding: 3px 13px;
 }
 .container{
     max-width: 80vh;
@@ -48,6 +50,16 @@ h1,h2,h3{
 .logo{
     font-weight: 800;
     font-size: large;
+}
+
+.btnsm{
+    padding: 8px 17px;
+    background: black;
+    color: white;
+    font-weight: 900;
+    border: 2px solid gray;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 
