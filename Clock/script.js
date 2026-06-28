@@ -12,3 +12,4 @@ setInterval(()=>{
     second.style.transform = `rotate(${srotation}deg)`
 },1000);
 console.log("maintaining streak") ;
+console.log("Maintaining streak again..");
